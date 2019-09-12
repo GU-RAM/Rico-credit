@@ -1,0 +1,7 @@
+.s-and-g {
+    margin-top: 7.5rem; 
+
+    &__lines-wrapper {
+       @include lines-around(3.5rem); 
+    } 
+}

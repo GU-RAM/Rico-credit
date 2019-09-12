@@ -1,0 +1,68 @@
+.slider {
+    position: relative;
+    height: 39rem;
+    color: #fff;
+    margin-top: 3rem;
+    margin-left: 15px;
+    background: blue url("../images/slider-mortgage.jpg") no-repeat center/cover;   
+    flex-basis: calc(100% - 30px);
+
+    &__vert-cent {
+        @include vertical-center();
+        margin-left: 7.5rem;
+    }
+
+    &__lines {
+        width: 9.5rem;
+        border-bottom: 2px solid $color-rico-gold;
+        margin-bottom: 3px;
+    }
+
+    &__button {
+        background-color: #fff;
+        border: none;
+        border-radius: 10px;
+        width: 17rem;
+        height: 4rem;
+        margin-top: 4rem;
+        color: $color-secondary;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+    }
+
+    &__lt {
+        left: 2rem;
+        height: 3.5rem;
+        @include vertical-center();
+        cursor: pointer;
+    }
+
+    &__gt {
+        right: 2rem;
+        height: 3.5rem;
+        @include vertical-center();
+        cursor: pointer;
+    }
+
+    &__changer {
+        height: 2.5rem;
+        width: 17rem;
+        background-color: #fff;
+        position: absolute;
+        left: calc(50% - 17rem/2);
+        bottom: -1.25rem;
+
+        &__circle {
+            height: 0.8rem;
+            width: 0.8rem;
+            // color: black;
+            border-radius: 50%;
+            background-color:#bcb9bd;
+            margin-right: 1.2rem;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

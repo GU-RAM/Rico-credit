@@ -1,0 +1,42 @@
+.bussiness-alternatives {
+    margin-top: 6rem;
+    color: #fff;
+    font-size: 1.4rem;
+
+    h2 {
+        font-size: 2.9rem;
+        margin-bottom: 2rem;
+        color: #fff;
+    }
+
+    &__underline-wrapper div {
+        border-bottom: 2px solid $color-rico-gold;
+        width: 3rem;
+        margin: 0 auto;
+        margin-bottom: 3px;
+
+        &:last-child {
+            margin-bottom: 1.5rem;
+        }
+    } 
+} 
+
+.gold-bill {
+    @include bussiness-alternatives-divs('gold');
+
+    & h2 {
+        color: $color-rico-gold;
+    }
+}
+
+.pawnshop {
+    @include bussiness-alternatives-divs('pawnshop');
+}
+
+.money-sendings {
+    @include bussiness-alternatives-divs('money-sendings');
+
+    & h2 {
+        font-size: 2.4rem;
+    }
+}

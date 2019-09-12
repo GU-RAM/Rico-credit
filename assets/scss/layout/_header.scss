@@ -1,0 +1,101 @@
+.header {
+    &__top-lines {
+        border-bottom: 2px solid $color-rico-gold;
+        margin-top: 2px; 
+    }
+
+    &__card {
+        border: none;
+        border-radius: 5px;
+        overflow: hidden;
+        width: 19rem;
+        font-size: 1.4rem;
+        color: #fff;
+        background-color: #ece8ed;
+        
+
+        &__col1 {
+            background-color: $color-rico-gold;
+            padding: 0;
+            width: 4rem;
+            
+            & img {
+                width: 1.4rem;
+            }
+        }
+
+        &__col2 {
+            background-color: $color-rico-dark-gold;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+    }
+
+    &__languages {
+        vertical-align: top;
+        padding: .5rem;
+        width: 11.5rem;
+        background-color: #d3d0d4;
+        border-radius: 5px;
+
+        & img {
+        opacity: .2;
+        display: block;
+        }
+
+        & img:hover {
+            opacity: 1;
+        }
+    }
+
+
+     &__nav li {
+        border-left: 2px solid $color-rico-dark-gold;
+        padding-left: 1.3rem;
+        padding-right: 1.3rem;
+        font-size: 1.4rem;
+
+        &:first-child {
+            border: none;
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+
+    &__main__nav {
+        margin-top: 3rem;
+        font-size: 1.8rem;
+
+        & li {
+            display: flex;
+            flex: 1 1 auto;
+            justify-content: center;   
+            padding: 1.5rem 0;
+            color: $color-secondary;
+            background-color: #fff; 
+            border-right: 2px solid #e5e1e6; 
+            cursor: pointer;
+
+            & a {
+                color: $color-secondary;
+                display: block;
+            }
+
+            &:last-child {
+                border: none;
+            }
+
+            &:hover {
+                background-color: #81458a;
+                border-radius: .5rem;
+                transform: scale(1.2);
+                
+                & a {
+                   color: #fff;
+                }  
+            }
+        }
+    }
+}

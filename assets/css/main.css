@@ -1,0 +1,302 @@
+/*---- Base Layout----*/
+* {
+  box-sizing: border-box; }
+
+body {
+  color: #636363;
+  font: 1.8rem/1.5 Helvetica, sans-serif;
+  background-color: #ece8ed; }
+
+img {
+  max-width: 100%; }
+
+h1 {
+  font-size: 4.6rem;
+  color: #892e96; }
+
+ul li {
+  list-style-type: none; }
+
+ul {
+  padding-left: 0; }
+
+a {
+  text-decoration: none !important;
+  color: #636363;
+  display: block; }
+
+a:hover {
+  text-decoration: none; }
+
+html {
+  font-size: 62.5%; }
+  @media screen and (max-width: 560px) {
+    html {
+      font-size: 40%; } }
+  @media screen and (min-width: 560px) {
+    html {
+      font-size: 45%; } }
+  @media screen and (min-width: 768px) {
+    html {
+      font-size: 55%; } }
+  @media screen and (min-width: 992px) {
+    html {
+      font-size: 62.5%; } }
+
+.header__top-lines {
+  border-bottom: 2px solid #dfb56e;
+  margin-top: 2px; }
+
+.header__card {
+  border: none;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 19rem;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: #ece8ed; }
+  .header__card__col1 {
+    background-color: #dfb56e;
+    padding: 0;
+    width: 4rem; }
+    .header__card__col1 img {
+      width: 1.4rem; }
+  .header__card__col2 {
+    background-color: #d1aa67;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; }
+
+.header__languages {
+  vertical-align: top;
+  padding: .5rem;
+  width: 11.5rem;
+  background-color: #d3d0d4;
+  border-radius: 5px; }
+  .header__languages img {
+    opacity: .2;
+    display: block; }
+  .header__languages img:hover {
+    opacity: 1; }
+
+.header__nav li {
+  border-left: 2px solid #d1aa67;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+  font-size: 1.4rem; }
+  .header__nav li:first-child {
+    border: none; }
+  .header__nav li:last-child {
+    padding-right: 0; }
+
+.header__main__nav {
+  margin-top: 3rem;
+  font-size: 1.8rem; }
+  .header__main__nav li {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    padding: 1.5rem 0;
+    color: #892e96;
+    background-color: #fff;
+    border-right: 2px solid #e5e1e6;
+    cursor: pointer; }
+    .header__main__nav li a {
+      color: #892e96;
+      display: block; }
+    .header__main__nav li:last-child {
+      border: none; }
+    .header__main__nav li:hover {
+      background-color: #81458a;
+      border-radius: .5rem;
+      transform: scale(1.2); }
+      .header__main__nav li:hover a {
+        color: #fff; }
+
+.slider {
+  position: relative;
+  height: 39rem;
+  color: #fff;
+  margin-top: 3rem;
+  margin-left: 15px;
+  background: blue url("../images/slider-mortgage.jpg") no-repeat center/cover;
+  flex-basis: calc(100% - 30px); }
+  .slider__vert-cent {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-left: 7.5rem; }
+  .slider__lines {
+    width: 9.5rem;
+    border-bottom: 2px solid #dfb56e;
+    margin-bottom: 3px; }
+  .slider__button {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    width: 17rem;
+    height: 4rem;
+    margin-top: 4rem;
+    color: #892e96;
+    font-size: 1.6rem;
+    text-transform: uppercase; }
+  .slider__lt {
+    left: 2rem;
+    height: 3.5rem;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: pointer; }
+  .slider__gt {
+    right: 2rem;
+    height: 3.5rem;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: pointer; }
+  .slider__changer {
+    height: 2.5rem;
+    width: 17rem;
+    background-color: #fff;
+    position: absolute;
+    left: calc(50% - 17rem/2);
+    bottom: -1.25rem; }
+    .slider__changer__circle {
+      height: 0.8rem;
+      width: 0.8rem;
+      border-radius: 50%;
+      background-color: #bcb9bd;
+      margin-right: 1.2rem; }
+      .slider__changer__circle:last-child {
+        margin-right: 0; }
+
+.main__mortgage {
+  margin-top: 6rem; }
+  .main__mortgage h2 {
+    color: #892e96;
+    font-size: 2.4rem;
+    font-weight: bold; }
+
+.currency__value {
+  border-radius: 10px;
+  padding: 2.5rem;
+  position: relative; }
+
+.currency .currency__table tr {
+  height: 4.7rem; }
+
+.currency .currency__table th {
+  font-size: 1.6rem; }
+
+.currency .currency__table .mute-color {
+  color: #a0a0a0; }
+
+.currency .currency__table td {
+  font-size: 2.2rem;
+  color: #892e96; }
+
+.currency .all__courses {
+  position: absolute;
+  width: 16rem;
+  height: 4rem;
+  background-color: #fff;
+  left: calc(50% - 8rem);
+  bottom: -2rem;
+  box-shadow: 2px 2px 10px black;
+  border-radius: 10px;
+  color: #892e96;
+  cursor: pointer; }
+
+.greek__sendings {
+  margin-top: 4rem;
+  font-size: 1.6rem; }
+  .greek__sendings .card {
+    position: relative; }
+  .greek__sendings .card img {
+    border-radius: .5rem; }
+  .greek__sendings .card-img-overlay {
+    margin-left: 30%;
+    margin-right: 10%; }
+  .greek__sendings .percentage {
+    position: absolute;
+    left: 6.5%;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%); }
+    .greek__sendings .percentage img {
+      width: 100%; }
+    .greek__sendings .percentage span {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2.4rem; }
+  .greek__sendings .card-title {
+    font-size: 2.9rem;
+    font-weight: bold;
+    color: #fff; }
+
+.currency-lines-wrapper {
+  display: inline-block; }
+  .currency-lines-wrapper div {
+    display: inline-block; }
+    .currency-lines-wrapper div div {
+      width: 3.5rem;
+      border-bottom: 2px solid #dfb56e;
+      margin-bottom: 2px; }
+
+.bussiness-alternatives {
+  margin-top: 6rem;
+  color: #fff;
+  font-size: 1.4rem; }
+  .bussiness-alternatives h2 {
+    font-size: 2.9rem;
+    margin-bottom: 2rem;
+    color: #fff; }
+  .bussiness-alternatives__underline-wrapper div {
+    border-bottom: 2px solid #dfb56e;
+    width: 3rem;
+    margin: 0 auto;
+    margin-bottom: 3px; }
+    .bussiness-alternatives__underline-wrapper div:last-child {
+      margin-bottom: 1.5rem; }
+
+.gold-bill {
+  background: url("../images/gold.png") no-repeat center/cover;
+  border-radius: 10px;
+  height: 44rem;
+  padding: 0 2rem;
+  padding-top: 3rem; }
+  .gold-bill h2 {
+    color: #dfb56e; }
+
+.pawnshop {
+  background: url("../images/pawnshop.png") no-repeat center/cover;
+  border-radius: 10px;
+  height: 44rem;
+  padding: 0 2rem;
+  padding-top: 3rem; }
+
+.money-sendings {
+  background: url("../images/money-sendings.png") no-repeat center/cover;
+  border-radius: 10px;
+  height: 44rem;
+  padding: 0 2rem;
+  padding-top: 3rem; }
+  .money-sendings h2 {
+    font-size: 2.4rem; }
+
+.s-and-g {
+  margin-top: 7.5rem; }
+  .s-and-g__lines-wrapper {
+    display: inline-block; }
+    .s-and-g__lines-wrapper div {
+      width: 3.5rem;
+      border-bottom: 2px solid #dfb56e;
+      margin-bottom: 2px; }

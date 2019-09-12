@@ -1,0 +1,9 @@
+.main__mortgage {
+    margin-top: 6rem;
+
+    & h2 {
+        color: $color-secondary;
+        font-size: 2.4rem;
+        font-weight: bold;
+    }
+}
