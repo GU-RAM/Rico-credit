@@ -1,0 +1,25 @@
+.n-and-i {
+
+    &__lines-wrapper {
+       @include lines-around(3.5rem); 
+    }
+    
+    & .card-deck {
+        margin-top: 4rem;
+
+        &:last-child {
+            margin-top: 0;
+            @include mq('small') {
+                margin-top: 4rem;
+            }
+        }
+
+        & .card {
+            background: transparent;
+            border: none; 
+            font-family: 'FiraGo-SemiBold';
+            @include make-font-caps();
+            color: $color-secondary;
+        }
+    }
+} 

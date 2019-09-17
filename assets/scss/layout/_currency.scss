@@ -2,7 +2,7 @@
 .currency {
 
     &__value  {
-        border-radius: 10px;
+        border-radius: 10px;  
         padding: 2.5rem;
         position: relative;
     } 
@@ -38,6 +38,8 @@
         border-radius: 10px;
         color: $color-secondary;
         cursor: pointer;
+        font-family: 'FiraGo-SemiBold';
+        @include make-font-caps();
     }
 }
 
@@ -83,9 +85,5 @@
 }
 
 .currency-lines-wrapper {  
-    display: inline-block; 
-
-    & div {
-        @include lines-around(3.5rem);
-    }
+    @include lines-around(3.5rem);
 }

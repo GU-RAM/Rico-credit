@@ -4,8 +4,7 @@
         font-family: $font-family;
         src: url('#{$path-font}/#{$file}.eot');
         src: url('#{$path-font}/#{$file}.ttf') format('truetype'),
-             url('#{$path-font}/#{$file}.woff') format('woff'),
-             url('#{$path-font}/#{$file}.woff2') format('woff2');
+             url('#{$path-font}/#{$file}.woff') format('woff');
     }
 }
 
@@ -55,6 +54,12 @@
         margin-bottom: 2px;
     }
 }
+
+// Georgian alphabet uppercase
+@mixin make-font-caps() {
+    -webkit-font-feature-settings: 'case';
+    font-feature-settings: 'case' on;
+   }
 
 @mixin bussiness-alternatives-divs($img-name) {
     background: url('../images/#{$img-name}.png') no-repeat center/cover;

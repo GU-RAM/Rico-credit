@@ -1,4 +1,5 @@
 .header {
+
     &__top-lines {
         border-bottom: 2px solid $color-rico-gold;
         margin-top: 2px; 
@@ -9,9 +10,10 @@
         border-radius: 5px;
         overflow: hidden;
         width: 19rem;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         color: #fff;
         background-color: #ece8ed;
+        @include make-font-caps();
         
 
         &__col1 {
@@ -27,7 +29,7 @@
         &__col2 {
             background-color: $color-rico-dark-gold;
             border-top-right-radius: 5px;
-            border-bottom-right-radius: 5px;
+            border-bottom-right-radius: 5px
         }
     }
 
@@ -50,7 +52,7 @@
 
 
      &__nav li {
-        border-left: 2px solid $color-rico-dark-gold;
+        border-left: 1px solid $color-rico-dark-gold;
         padding-left: 1.3rem;
         padding-right: 1.3rem;
         font-size: 1.4rem;

@@ -3,5 +3,48 @@
 
     &__lines-wrapper {
        @include lines-around(3.5rem); 
-    } 
+    }
+    
+    &__learn-more {
+        font-family: 'FiraGo-SemiBold';
+        display: inline-block;
+        color: $color-secondary;
+        padding: 1.5rem;
+        margin-top: 3rem;
+        margin-bottom: 9rem; 
+        @include make-font-caps();  
+    }
+}
+
+.transfer-options {
+    margin-top: 5rem;
+    cursor: pointer;
+
+    & li {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        justify-content: space-between;
+        min-width: 8rem;
+        padding: 2rem;
+
+        @include mq('small') {
+            min-width: 11.5rem;
+        }
+        @include mq('xlarge') {
+            min-width: 12.5rem;
+        }
+
+        & a {
+            cursor: pointer;
+        }
+    }
+    
+    .slide {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1000px;
+        height: 110px; 
+        overflow: hidden;
+    }
 }

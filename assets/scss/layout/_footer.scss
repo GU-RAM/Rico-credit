@@ -1,0 +1,33 @@
+.footer {
+    background-color:#fff;
+    padding-top: 4rem;
+    font-size: 1.4rem;
+     
+    &__main-nav li {
+        display: inline-block; 
+        font-family: 'Firago-Regular';
+        border-left: 1px solid $color-rico-dark-gold;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+        text-align: right;
+    
+        &:first-child {
+            border: none;
+            padding-left: 0;
+        }
+ 
+        &:last-child { 
+            padding-right: 0;
+        } 
+    }
+
+    &__sn-nav li {
+        display: inline-block; 
+        padding-left: 2rem;
+    }
+
+    & span {
+        display: block;
+        margin-bottom: 1rem;
+    }
+}

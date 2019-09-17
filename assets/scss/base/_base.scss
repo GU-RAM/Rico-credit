@@ -1,11 +1,12 @@
 /*---- Base Layout----*/
+
 * {
 	box-sizing: border-box;
 }
 
 body {
 	color: $color-primary;
-	font: 1.8rem/1.5 Helvetica, sans-serif;
+	font: 1.8rem/1.5 'FiraGO-Regular';
 	background-color: #ece8ed;
 }
 
@@ -15,11 +16,24 @@ img {
 
 h1 {
     font-size: 4.6rem;
-    color: $color-secondary;
+	color: $color-secondary;
+	font-family: 'FiraGo-SemiBold';
+	@include make-font-caps();
+}
+
+h2, h3, button {
+	font-family: 'FiraGo-SemiBold';
+	@include make-font-caps();
+}
+
+h4 {
+	@include make-font-caps();
 }
 
 ul li {
 	list-style-type: none;
+	font-family: 'FiraGo-SemiBold'; 
+	@include make-font-caps();
 }
 
 ul {
@@ -34,4 +48,8 @@ a {
 
 a:hover {
 	text-decoration: none;
+}
+
+.text-muted {
+	color: #a0a0a0!important;
 }

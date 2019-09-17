@@ -1,3 +1,13 @@
+// Web Fonts
+
+@include font-face('FiraGO-Regular', FiraGO-Regular);
+@include font-face('FiraGO-Light', FiraGO-Light);
+@include font-face('FiraGO-Medium', FiraGO-Medium);
+@include font-face('FiraGO-SemiBold', FiraGO-SemiBold);
+@include font-face('FiraGO-Bold', FiraGO-Bold);
+
+
+
 html {
     font-size: 62.5%;
     @include mq('xsmall'){
