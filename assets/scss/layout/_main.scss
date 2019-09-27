@@ -3,7 +3,10 @@
 
     & h2 {
         color: $color-secondary;
-        font-size: 2.4rem;
+        font-size: 2.2rem;
         font-weight: bold;
+        @include mq('large') {
+            font-size: 2.4rem;
+        }
     }
 }

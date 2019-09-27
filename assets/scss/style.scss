@@ -1,13 +1,17 @@
+
+@import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 @import 'abstracts/variables',
         'abstracts/mixins';
         
-@import 'base/base',
-        'base/typography';  
+@import 'base/typography',
+        'base/base';  
         
 @import 'layout/header',
         'layout/header-slider',
         'layout/main',
         'layout/currency',
+        'layout/calculator',
         'layout/bussiness-altrnatives',
         'layout/s-and-g',
         'layout/new-and-int',

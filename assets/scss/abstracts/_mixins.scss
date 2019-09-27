@@ -23,7 +23,7 @@
         @media screen and (max-width: $sm) {
             @content;
         }
-    } @else if $break == 'small' {
+    }  @else if $break == 'small' {
         @media screen and (min-width: $sm) {
             @content;
         }
@@ -43,6 +43,22 @@
         @error 'No value could be retrieved for `#{break}`';
     }
 }
+
+// Special Media queries for header nav li border none
+@mixin mqHeaderNav($spbreak) {
+    @if $spbreak == 'small' {
+        @media screen and (max-width: 476px) {
+            @content;
+        }
+        } @else if $spbreak == 'medium' {
+            @media screen and (min-width: 478px) and (max-width: 991px) {
+                @content;
+            }
+        }
+}
+
+// Media queries for specific use, with specific brakpoints
+
 
 // lines around 
 @mixin lines-around($width) {

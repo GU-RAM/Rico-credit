@@ -18,33 +18,31 @@
 
 .transfer-options {
     margin-top: 5rem;
-    cursor: pointer;
 
     & li {
         display: flex;
         flex-grow: 1;
         align-items: center;
         justify-content: space-between;
-        min-width: 8rem;
         padding: 2rem;
-
-        @include mq('small') {
-            min-width: 11.5rem;
-        }
-        @include mq('xlarge') {
-            min-width: 12.5rem;
-        }
-
-        & a {
-            cursor: pointer;
-        }
+        cursor: pointer;
     }
     
     .slide {
         display: flex;
         justify-content: space-between;
         max-width: 1000px;
-        height: 110px; 
+        height: 120px; 
+        flex-wrap: wrap;
         overflow: hidden;
+
+        & li {
+            justify-content: center;
+        }
+    }
+
+    & .icon-greater {
+        height: 3rem;
+        width: 2rem;
     }
 }

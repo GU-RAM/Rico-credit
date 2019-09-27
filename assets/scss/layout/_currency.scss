@@ -25,6 +25,10 @@
             font-size: 2.2rem;
             color: $color-secondary;
         }
+
+        & tbody td {
+            font-family: 'FiraGo-SemiBold';
+        }
     }
 
     & .all__courses {
@@ -46,6 +50,13 @@
 .greek__sendings {
     margin-top: 4rem;
     font-size: 1.6rem;
+    @include mq('medium') {
+        font-size: 1rem;
+    }
+
+    @include mq('large') {
+        font-size: 1.6rem;
+    }
 
     & .card {
         position: relative;
@@ -85,5 +96,8 @@
 }
 
 .currency-lines-wrapper {  
-    @include lines-around(3.5rem);
+    @include lines-around(3rem);
+    @include mq('xlarge') {
+        @include lines-around(3.5rem);
+    }
 }
